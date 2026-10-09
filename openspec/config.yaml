@@ -2,6 +2,26 @@ schema: spec-driven
 githubCopilot:
   cloudAgent: false
 
+context: |
+  ## Project
+
+  Knot-MCP is a planned MCP server shared across Knot installations and users:
+  one place several people's Knot apps, and the agents running in them, can
+  reach each other, where today each Knot runs its own local, single-user MCP
+  server (the `knot-mcp` crate in pilgrimagesoftware/Knot-App).
+
+  Nothing is built yet. Its behaviour, transport, identity model and
+  implementation language are decided by the first change proposed here.
+
+  ## Constraints
+
+  - MIT licensed. Knot-App is AGPL-3.0: do not copy its code into this
+    repository. Depending on, or re-licensing, app code is a decision for the
+    server's design change, not something to do in passing.
+  - Part of the Knot family, gathered by the meta-repository
+    pilgrimagesoftware/Knot as a submodule tracking `develop`.
+  - git-flow: `develop` for integration, `master` for releases.
+
 # Project context (optional)
 # This is shown to AI when creating artifacts.
 # Add your tech stack, conventions, style guides, domain knowledge, etc.
